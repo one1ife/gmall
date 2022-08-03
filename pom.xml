@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xyxy.gmall</groupId>
-    <artifactId>gmall</artifactId>
+    <artifactId>Gmall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gmall</name>
+    <name>Gmall</name>
     <description>聚合服务</description>
     <packaging>pom</packaging>
 
@@ -16,6 +16,9 @@
         <module>gmall-order</module>
         <module>gmall-product</module>
         <module>gmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>gmall-common</module>
     </modules>
 
 </project>
