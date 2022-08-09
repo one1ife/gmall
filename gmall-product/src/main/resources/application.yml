@@ -9,6 +9,11 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI5t9Rio1Ehe385qLTnhQc
+      secret-key: lLcHtvWyxb5ihM6ENIg0KuyvQhEtzs
+      oss:
+        endpoint: oss-cn-hangzhou.aliyuncs.com
   application:
       name: gmall-product
 
@@ -17,5 +22,18 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto #设置主键为自增
+      #逻辑删除
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 server:
   port: 10500
+  error:
+    include-binding-errors: always
+    include-message: always
+#设置日志级别
+logging:
+  level:
+    com.xyxy.gmall: debug
+
+# 设置校验错误信息
+    
