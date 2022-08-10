@@ -5,7 +5,7 @@
 	<groupId>io.renren</groupId>
 	<artifactId>renren-generator</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<description>renren-generator</description>
 
 	<parent>
