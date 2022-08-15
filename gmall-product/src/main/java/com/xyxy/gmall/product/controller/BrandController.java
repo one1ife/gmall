@@ -91,7 +91,9 @@ public class BrandController {
     @RequestMapping("/update")
     //@RequiresPermissions("product:brand:update")
     public R update(@Validated(UpdateGroup.class)@RequestBody BrandEntity brand){
-		brandService.updateById(brand);
+//		brandService.updateById(brand);
+        //不只是更新品牌表，所有冗余存储的都需要更新
+        brandService.updateDetail(brand);
 
         return R.ok();
     }

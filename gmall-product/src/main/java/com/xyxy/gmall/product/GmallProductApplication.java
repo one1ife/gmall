@@ -3,6 +3,8 @@ package com.xyxy.gmall.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /*
 1.整合MyBatis-Plus
@@ -50,7 +52,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     @Retention(RetentionPolicy.RUNTIME)
     public @interface ListValue {
 */
+@EnableFeignClients(basePackages = "com.xyxy.gmall.product.feign")
 @MapperScan("com.xyxy.gmall.product.dao")
+@EnableDiscoveryClient
 @SpringBootApplication
 public class GmallProductApplication {
 
